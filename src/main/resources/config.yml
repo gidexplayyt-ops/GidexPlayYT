@@ -1,0 +1,67 @@
+# SmartTrash 2025 Configuration
+# AI System Settings
+
+# Настройки AI анализа
+ai:
+  # Интервал авто-анализа в тиках (20 тиков = 1 секунда)
+  auto-analysis-interval: 6000
+  # Минимальная уверенность AI для классификации (0.0 - 1.0)
+  min-confidence: 0.7
+  # Включить глубокий анализ предметов
+  enable-deep-analysis: true
+
+# Настройки статистики
+stats:
+  # Автосохранение статистики (в минутах)
+  auto-save-interval: 10
+  # Сохранять данные при выходе игрока
+  save-on-logout: true
+  # Показывать уведомления о достижениях
+  show-achievements: true
+
+# Настройки GUI
+gui:
+  # Анимации в GUI
+  animations-enabled: true
+  # Звуковые эффекты
+  sound-effects: true
+  # Авто-обновление интерфейса
+  auto-refresh: true
+
+# Настройки квантовой переработки
+quantum:
+  # Требуемый уровень прав для доступа
+  required-permission: "smarttrash.quantum"
+  # Базовая эффективность квантовой переработки
+  base-efficiency: 0.99
+  # Время переработки в тиках
+  processing-time: 40
+
+# Категории мусора и их настройки
+categories:
+  nanoplastic:
+    co2-saving: 4.2
+    efficiency: 0.95
+  quantum_waste:
+    co2-saving: 12.5
+    efficiency: 0.85
+  holographic:
+    co2-saving: 6.8
+    efficiency: 0.90
+  biotech:
+    co2-saving: 8.3
+    efficiency: 0.88
+  energy_cells:
+    co2-saving: 15.2
+    efficiency: 0.92
+  ai_components:
+    co2-saving: 9.7
+    efficiency: 0.87
+
+# Сообщения и перевод
+messages:
+  prefix: "&8[&6SmartTrash&8]"
+  no-permission: "&cУ вас недостаточно прав для использования этой команды!"
+  only-players: "&cЭту команду могут использовать только игроки!"
+  trash-sorted: "&aУспешно отсортировано &e{amount} &aпредметов в категорию: {category}"
+  co2-saved: "&bСохранено CO2: &e{co2} кг"

@@ -1,0 +1,45 @@
+name: SmartTrash
+main: com.smarttrash.SmartTrash
+version: "2025.1.0"
+api-version: "1.21"
+author: GidexPlay's Team
+description: AI-система сортировки мусора 2025 с квантовой переработкой
+website: https://smarttrash.example.com
+
+commands:
+  trash:
+    description: Открыть умную мусорку 2025
+    usage: /trash
+  trashai:
+    description: AI анализ инвентаря
+    usage: /trashai
+  trashstats:
+    description: Продвинутая статистика
+    usage: /trashstats
+  trashquantum:
+    description: Квантовая переработка
+    usage: /trashquantum
+  trashtest:
+    description: Тестирование системы
+    usage: /trashtest
+
+permissions:
+  smarttrash.*:
+    description: Все права умной мусорки
+    children:
+      smarttrash.use: true
+      smarttrash.ai: true
+      smarttrash.quantum: true
+      smarttrash.test: true
+  smarttrash.use:
+    description: Использовать мусорку
+    default: true
+  smarttrash.ai:
+    description: AI анализ
+    default: true
+  smarttrash.quantum:
+    description: Квантовая переработка
+    default: op
+  smarttrash.test:
+    description: Тестирование системы
+    default: op
